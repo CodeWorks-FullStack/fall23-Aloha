@@ -1,5 +1,9 @@
-.nav-bgColor{
-  background-color: #A649C7;
+:root {
+  --purple: #a649c7;
+}
+
+.nav-bgColor {
+  background-color: var(--purple);
 }
 
 .text-orange {
@@ -7,7 +11,7 @@
 }
 
 .bg-orange {
-  background-color: #E1A83B;
+  background-color: #e1a83b;
 }
 
 /* SECTION HERO IMAGE */
@@ -17,24 +21,24 @@
   min-height: 75dvh;
   background-size: cover;
   background-position: center;
-
 }
 
-.heroImage-textBG{
+.heroImage-textBG {
   background-color: rgba(0, 0, 0, 0.508);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
 
 .shopImg {
-
   object-fit: cover;
+  height: 15rem;
+  width: 100%;
 }
 
 .shop-button {
-position: absolute;
-bottom: 5%;
-left: 40%;
+  position: absolute;
+  bottom: 5%;
+  left: 40%;
 }
 
 .custom {
@@ -45,26 +49,35 @@ left: 40%;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.646);
 }
 
-.text-lobster{
-  font-family: 'Lobster Two', cursive;
+.text-lobster {
+  font-family: "Lobster Two", cursive;
 }
 
 .shopNowButton {
   text-align: end;
 }
 
-i{
+i {
   text-shadow: 0px 0px 3px black;
 }
 
 /* SECTION MEDIUM MEDIA RULES */
 
-@media(max-width: 767px){
+@media (max-width: 767px) {
   .heroImage {
     background-image: url(https://images.unsplash.com/photo-1622396727845-c15ef9ffb419?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2187&q=80);
   }
 
-  .shopNowButton{
+  .shopNowButton {
     text-align: center;
+  }
+
+  .shopImg {
+    height: 100%;
+  }
+
+  .shop-button {
+    bottom: 1%;
+    left: 42.5%;
   }
 }
